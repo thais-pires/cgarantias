@@ -1,0 +1,32 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Notebook",
+      "dataCompra": "2021-01-01",
+      "duracaoGarantiaMeses": 12,
+      "dataFimGarantia": "2022-01-01"
+    },
+    {
+      "id": 2,
+      "nome": "Celular",
+      "dataCompra": "2021-12-22",
+      "duracaoGarantiaMeses": 24,
+      "dataFimGarantia": "2023-12-22"
+    },
+    {
+      "id": 3,
+      "nome": "Televisão",
+      "dataCompra": "2021-06-11",
+      "duracaoGarantiaMeses": 36,
+      "dataFimGarantia": "2024-06-11"
+    },
+    {
+      "id": 4,
+      "nome": "sda",
+      "dataCompra": "1222-02-23",
+      "duracaoGarantiaMeses": 54,
+      "dataFimGarantia": "1226-08-23"
+    }
+  ]
+}

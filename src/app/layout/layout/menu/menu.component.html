@@ -1,0 +1,14 @@
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item [routerLink]="['/cadastro-produto']" >Cadastrar Garantia</button>
+  <button mat-menu-item [routerLink]="['/listagem-produtos']">Listar Garantia</button>
+  <!-- <button mat-menu-item [routerLink]="['/cadastro-listagem-alunos']">Cadastrar-Listar Alunos</button>
+  <button mat-menu-item [routerLink]="['/listagem-tabela']">Listar Alunos - Tabela</button> -->
+</mat-menu>
+
+<!-- <mat-toolbar color="primary">
+  <span>Controle de Garantias</span>
+  <span class="spacer"></span>
+  <button mat-raised-button color="accent" [routerLink]="['/cadastro-produto']">
+  <mat-icon>add</mat-icon></button>
+</mat-toolbar> -->

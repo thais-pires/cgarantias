@@ -1,0 +1,30 @@
+<!-- <h1 *ngIf="estahCadastrando">Cadastro de Garantias</h1>
+<h1 *ngIf="!estahCadastrando">Edição de Garantias</h1>
+
+<br> -->
+
+<mat-form-field>
+  Nome: <input matInput [(ngModel)]="produtoTratamento.nome" placeholder="Nome do Produto" name="nome" required>
+</mat-form-field>
+
+<!-- <mat-form-field>
+  Data da Compra: <input mat[matDatepicker]="picker" [(ngModel)]="produtoTratamento.dataCompra" placeholder="Data da Compra" name="dataCompra" required>
+</mat-form-field> -->
+
+<mat-form-field>
+  <input matInput [matDatepicker]="picker" placeholder="Data da Compra" name="dataCompra" [(ngModel)]="produtoTratamento.dataCompra" required>
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+<mat-form-field>
+  Duração da Garantia: <input matInput type="number" [(ngModel)]="produtoTratamento.duracaoGarantiaMeses" placeholder="Duração da Garantia (em meses)" name="duracaoGarantiaMeses" required>
+</mat-form-field>
+
+<button mat-raised-button color="primary" (click)="cadastrarOuAtualizar()">
+  <!-- <mat-icon *ngIf="estahCadastrando">add</mat-icon>
+  <mat-icon *ngIf="!estahCadastrando">edit</mat-icon> -->
+  {{nomeBotao}}</button>
+<br>
+<div class="mensagem-erro">{{mensagemErro}}</div>
+<br>

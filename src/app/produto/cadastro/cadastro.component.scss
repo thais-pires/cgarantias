@@ -1,0 +1,30 @@
+.container {
+  background-color: #FFA500; // Laranja
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+
+  input {
+    width: 100%;
+  }
+}
+
+mat-raised-button {
+  background-color: #4CAF50; // Verde
+  color: white;
+
+  &:hover {
+    background-color: #45a049; // Tom mais escuro de verde ao passar o mouse
+  }
+}
+
+.mensagem-erro {
+  color: #FF0000; // Vermelho
+  font-weight: bold;
+  margin-top: 15px;
+}
